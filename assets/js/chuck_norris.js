@@ -1,3 +1,7 @@
+// create a variable for the joke-btn 
+//may need to review this idea
+var btn = document.getElementById("joke-btn");
+
 // this should be fun
 var humbleRequest = new XMLHttpRequest();
 humbleRequest.open('GET', 'https://api.chucknorris.io/jokes/random');
@@ -17,3 +21,4 @@ humbleRequest.send();
 //     console.log(data);
 //   }
 // });
+// 
