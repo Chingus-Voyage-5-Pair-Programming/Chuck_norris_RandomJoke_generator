@@ -11,8 +11,13 @@ html {
 	Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-size: 1em;
 	color: var(--black);
-	overflow: hidden;
+	overflow-x: hidden;
 
+}
+
+img{
+	width: 100%;
+	height: auto;
 }
 
 a { 
@@ -66,6 +71,7 @@ body{
 	display: flex;
 	justify-content: center;
 	color: var(--brown);
+
 }
 .header-p{
 	grid-column: 2/-1;
@@ -127,7 +133,149 @@ footer{
 
 .header-headline{
 	color: var(--brown);
+			text-align: center;	
 }
+
+/*Media Queries*/
+@media only screen and (max-width: 450px){
+
+
+ 	.header-headline{
+ 		font-size: 1em;
+ 		text-align: center;	
+ 	}
+
+ 	.header-grid{
+		
+		grid-column: 1fr;
+		grid-gap: 10px;
+		grid-template-areas: "imgg"
+								"imgg"
+							  "subb"
+							  "headerp"	
+							  "headerp"
+							  "but"
+							  "cap"
+							  	"foot"
+
+ 	}
+	
+	.chuckcat-img{
+		grid-area: imgg;
+		text-align: center;
+		margin-left: 10px;
+	}
+
+	.header-btn-div{
+		grid-area: but;
+
+	}
+
+	#joke-btn{
+		width:100%;
+		height: auto;
+		font-size: 2em;
+		margin-left: 10px;
+	}
+
+
+	.header-subheading{
+		grid-area: subb;
+		margin-left: 10px;
+		text-align: center;
+	}
+
+	.header-p{
+		grid-area: headerp;
+	}
+
+	.caption{
+		grid-area: cap;
+	}
+
+	footer{
+		grid-area: foot;
+		text-align: center;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 1200px){
+
+ 	.header-headline{
+ 		font-size: 1em;
+ 	}
+
+ 	.header-grid{
+		
+		grid-column: 1fr;
+		grid-gap: 10px;
+		grid-template-areas: "imgg"
+							"imgg"
+							"imgg"
+							  "subb"
+							  "subb"
+							  "headerp"	
+							  "headerp"
+							  "but"
+							  "cap"
+							  	"foot"
+
+ 	}
+	
+	.chuckcat-img{
+		grid-area: imgg;
+		text-align: center;
+		margin-left: 10px;
+		max-height: 450px;
+	}
+
+	.header-btn-div{
+		grid-area: but;
+
+	}
+
+	#joke-btn{
+		width:100%;
+		height: auto;
+		font-size: 2em;
+		margin-left: 10px;
+	}
+
+
+	.header-subheading{
+		grid-area: subb;
+		margin-left: 10px;
+		text-align: center;
+	}
+
+	.header-p{
+		grid-area: headerp;
+	}
+
+	.caption{
+		grid-area: cap;
+	}
+
+	footer{
+		grid-area: foot;
+		text-align: center;
+	}
+
+
+
+}
+
+}
+@media only screen and (max-width: 1156px){
+ 	body{
+ 		background-color: red
+ 	}
+
+}
+/*********/
 
 
 
