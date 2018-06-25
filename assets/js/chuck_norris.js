@@ -6,7 +6,6 @@ var btn = document.getElementById("joke-btn");
 var randomJoke = '';
 // this should be fun
 
-
 var humbleRequest = new XMLHttpRequest();
 humbleRequest.open('GET', 'https://api.chucknorris.io/jokes/random');
 humbleRequest.onload = function(){
@@ -15,7 +14,6 @@ var humbleData = JSON.parse(humbleRequest.responseText);
 randomJoke = humbleData.value;
 // $('.joke-to-change').html(randomJoke); next move
 // console.log(humbleData.value);
-
 
 document.getElementById('joke-to-change').innerHTML = randomJoke;
     

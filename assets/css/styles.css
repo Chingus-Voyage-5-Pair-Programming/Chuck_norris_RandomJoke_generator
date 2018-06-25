@@ -100,6 +100,7 @@ body{
 	color: white;
 	font-family: 'Anton', sans-serif;
 	width: 95%;
+	border-radius: 25px
 	/*border: solid 5px var(--brown);*/
 }
 
@@ -172,10 +173,11 @@ footer{
 	}
 
 	#joke-btn{
-		width:100%;
+		width:80%;
 		height: auto;
 		font-size: 2em;
 		margin-left: 10px;
+		border-radius: 15px
 	}
 
 
@@ -242,6 +244,7 @@ footer{
 		height: auto;
 		font-size: 2em;
 		margin-left: 10px;
+		border-radius: 15px
 	}
 
 
